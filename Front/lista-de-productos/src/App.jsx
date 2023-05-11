@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ListaProductos from './components/ListaProductos'
 import CrearProducto from './components/CrearProducto';
+import EditarProducto from './components/EditarProducto';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Routes>
           <Route path='/' element={<ListaProductos></ListaProductos>}></Route>
           <Route path='/ingresarProducto' element={<CrearProducto></CrearProducto>}></Route>
+          <Route path='/editarProducto/:id' element={<EditarProducto></EditarProducto>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

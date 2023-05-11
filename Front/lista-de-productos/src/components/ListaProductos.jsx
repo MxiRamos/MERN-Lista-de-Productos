@@ -3,6 +3,7 @@ import Producto from "./Producto"
 import { useEffect, useState } from "react"
 import axios from "axios"
 
+
 function ListaProductos(){
 
     const [dataProductos, setDataProductos] = useState([]) // dataProductos se le asigna un array vacio
@@ -33,6 +34,7 @@ function ListaProductos(){
                                     <th scope="col">Categoria</th>
                                     <th scope="col">Ubicacion</th>
                                     <th scope="col">Precio</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody className="table-group-divider">

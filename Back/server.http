@@ -1,0 +1,31 @@
+GET http://localhost:5000/api/productos HTTP/1.1
+
+###
+
+GET http://localhost:5000/api/productos/645afa7650e813173b5421ee HTTP/1.1
+
+###
+
+POST http://localhost:5000/api/productos HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "dsad",
+    "category": "Gallefsdtas",
+    "ubication": "Argentina",
+    "price": 250
+}
+
+###
+PUT http://localhost:5000/api/productos/645afa7650e813173b5421ee HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Oreo",
+    "category": "Galletitas",
+    "ubication": "Uruguay",
+    "price": 500
+}
+
+###
+DELETE http://localhost:5000/api/productos/645afa7650e813173b5421ee HTTP/1.1
